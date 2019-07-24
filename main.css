@@ -1,7 +1,7 @@
 body {
     margin: auto;
     box-sizing: border-box;
-    background-color: brown;
+    background-color: rgba(56, 205, 232, 0.04);
 }
 
 .header {
