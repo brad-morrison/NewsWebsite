@@ -97,7 +97,7 @@ body {
 }
 
 .spotlight {
-    width: 60%;
+    width: 65%;
     margin: auto;
     display: flex;
     margin-top: 30px;
@@ -106,20 +106,21 @@ body {
 .spotlight-centre {
     width: 50%;
     margin: auto;
-    padding: 0 20px;
-    border-left: 1px solid #e5e5e5;
-    border-right: 1px solid #e5e5e5;
+    padding: 0 30px;
 }
 
 .spotlight-left {
     width: 25%;
     height: 500px;
-    padding: 0 20px 0 20px;
+    padding: 0 30px;
+    border-right: 1px solid #e5e5e5;
 }
 
 .spotlight-right {
     width: 25%;
     height: 500px;
+    border-left: 1px solid #e5e5e5;
+    padding: 0 30px;
 }
 
 .spotlight-item-reg {
@@ -178,6 +179,7 @@ body {
 
 .spotlight-item-wide {
     position: relative;
+    margin-bottom: 60px
 }
 
 .spotlight-item-wide > img {
@@ -187,6 +189,21 @@ body {
     width: 40%;
     object-fit: cover;
     height: 150px;
+}
+
+.spotlight-item-small {
+    display: flex;
+    margin-top: 1px solid #e5e5e5;
+}
+
+.spotlight-item-small-content {
+    width: 68%;
+}
+
+.spotlight-item-small > img {
+    width: 40%;
+    height: 100px;
+    object-fit: cover;
 }
 
 
