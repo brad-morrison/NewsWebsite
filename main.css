@@ -1,7 +1,7 @@
 body {
     margin: auto;
     box-sizing: border-box;
-    background-color: rgba(56, 205, 232, 0.04);
+    background-color: #ffffff;
 }
 
 .header {
@@ -50,14 +50,18 @@ body {
 .header-items > a {
     padding-right: 38px;
     font-family: sans-serif;
+    font-size: 15px;
+}
+
+.header-items > a:hover {
+    cursor: pointer;
+    color: #767676;
 }
 
 .header-menu {
     width: 100%;
     display: flex;
     justify-content: center;
-    
-    
 }
 
 .menu-items {
@@ -76,9 +80,114 @@ body {
 }
 
 .button-sub {
-    background-color: #30a8d4;
+    background-color: #0787ca;
     color: white;
     border-style: none;
     padding: 6px 28px;
     font-size: 14px;
 }
+
+.button-sub {
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    color: #767676;
+}
+
+.spotlight {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+}
+
+.spotlight-centre {
+    width: 50%;
+    margin: auto;
+    padding: 0 20px;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+
+.spotlight-left {
+    width: 25%;
+    height: 500px;
+    padding: 0 20px 0 20px;
+}
+
+.spotlight-right {
+    width: 25%;
+    height: 500px;
+}
+
+.spotlight-item-reg {
+    overflow: hidden;
+    line-height: 24px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 30px;
+}
+
+.last {
+    border: 0;
+}
+
+.spotlight-item-reg > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item-section-text {
+    
+    font-family: sans-serif;
+    color: #db3334;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.item-title-text {
+    font-family: serif;
+    font-weight: 600;
+}
+
+.item-author-text {
+    
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.item-description {
+    
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.spotlight-item-large {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.spotlight-item-large > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.spotlight-item-wide {
+    position: relative;
+}
+
+.spotlight-item-wide > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    object-fit: cover;
+    height: 150px;
+}
+
+
+
