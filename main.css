@@ -74,7 +74,7 @@ body {
     font-size: 20px;
 }
 
-.sub-banner-link {
+.banner-link {
     color: #59b0db;
 }
 
@@ -140,6 +140,7 @@ body {
     margin: auto;
     display: flex;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .spotlight-centre {
@@ -218,17 +219,21 @@ body {
 
 .spotlight-item-wide {
     position: relative;
-    margin-bottom: 60px
+    display: flex;
+    margin-bottom: 60px;
+    z-index: -100;
+}
+
+.spotlight-item-wide-content {
+    width: 60%;
 }
 
 .spotlight-item-wide > img {
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 40%;
     object-fit: cover;
     height: 150px;
 }
+
 
 .spotlight-item-small {
     display: flex;
@@ -257,5 +262,9 @@ body {
     font-weight: 100;
 }
 
-
+footer {
+    background-color: #121212;
+    height: 500px;
+    width: 100%;
+}
 
