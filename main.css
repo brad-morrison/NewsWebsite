@@ -140,7 +140,7 @@ body {
     margin: auto;
     display: flex;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .spotlight-centre {
@@ -151,14 +151,12 @@ body {
 
 .spotlight-left {
     width: 25%;
-    height: 500px;
     padding: 0 30px;
     border-right: 1px solid #e5e5e5;
 }
 
 .spotlight-right {
     width: 25%;
-    height: 500px;
     border-left: 1px solid #e5e5e5;
     padding: 0 30px;
 }
@@ -189,8 +187,9 @@ body {
 }
 
 .item-title-text {
-    font-family: serif;
-    font-weight: 600;
+    font-family: poynter-oldstyle-text, serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .item-author-text {
