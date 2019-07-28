@@ -2,13 +2,20 @@ body {
     margin: auto;
     box-sizing: border-box;
     background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
 }
 
 .header {
+    position: fixed;
     width: 100%;
     margin: auto;
     background-color: #ffffff;
-    position: relative;
+}
+
+.header-blank {
+    height: 230px;
 }
 
 .header-top {
@@ -18,7 +25,6 @@ body {
 
 .header-logo {
     width: 400px;
-    min-width: 400px;
     height: 100%;
     margin: auto;
     align-content: center;
@@ -31,6 +37,7 @@ body {
     width: 60%;
     padding-top: 20px;
     padding-bottom: 0px;
+    transition: width 0.5s; 
 }
 
 .header-ad {
@@ -40,11 +47,42 @@ body {
     left: 0;
 }
 
+.ad-wide-centre {
+    width: 728px;
+    margin: auto;
+    height: 90px;
+    background-color: #cbcbcb;
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sub-banner {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin: auto;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.sub-banner > h2 { 
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.sub-banner-link {
+    color: #59b0db;
+}
+
 .header-items{
     position: absolute;
     right: 0;
     top: 0;
-    padding-top: 110px;
+    padding-top: 20px;
 }
 
 .header-items > a {
@@ -62,6 +100,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    transition: 0.5s;
 }
 
 .menu-items {
@@ -193,17 +232,29 @@ body {
 
 .spotlight-item-small {
     display: flex;
-    margin-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 25px;
+    margin-bottom: 10px;
 }
 
 .spotlight-item-small-content {
     width: 68%;
+    padding-right: 10px;
 }
 
 .spotlight-item-small > img {
     width: 40%;
     height: 100px;
     object-fit: cover;
+}
+
+.heading {
+    font-weight: 100;
+    font-style: oblique;
+}
+
+.item-title-text-thin {
+    font-weight: 100;
 }
 
 
