@@ -1,6 +1,7 @@
 var logo = document.getElementById("logo");
 var menu = document.getElementById("menu");
 var menuItems = document.getElementById("menuItems");
+var adTall = document.getElementById("ad-tall");
 
 window.onscroll = function(){scrollAction()};
 
@@ -22,4 +23,9 @@ function scrollAction()
         menuItems.style.borderBottom = "1px solid #e5e5e5";
         menu.style.boxShadow = "none";
     }
+    
+    /*if (pageYOffset > 1564)
+    {
+        adTall.style.position = "fixed";
+    }*/
 }
