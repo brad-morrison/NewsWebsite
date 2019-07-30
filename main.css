@@ -295,6 +295,7 @@ body {
 
 .spot-secondary-item > h2 {
     font-size: 26px;
+    text-transform: uppercase;
 }
 
 .spot-secondary-item {
@@ -352,7 +353,23 @@ body {
     height: 1000px;
 }
 
+.ad-wide-centre-big {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
+.latest-header {
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 65%;
+    margin: auto;
+}
 
 
 
