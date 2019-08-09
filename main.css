@@ -7,6 +7,74 @@ body {
     text-rendering: geometricPrecision;
 }
 
+:root {
+    /*  
+    font 1 - section, title
+    font 2 - body, description
+    font 3 - author
+    font 4 - main heading, sec heading, banners
+    */
+    
+    --font1: poynter-oldstyle-text, serif;
+    --font2: 
+}
+
+/* ------------------------------- */
+/* headers, titles & text          */
+/* ------------------------------- */
+
+/* item text */
+
+.item-title-text {
+    font-family: var(--font1);
+    font-weight: 500;
+    font-style: normal;
+}
+
+.item-section-text {
+    font-family: var(--font1);
+    color: #db3334;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.item-desc-text {
+    font-family: var(--font2);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.item-author-text {
+    font-family: var(--font3);
+    font-weight: 900;
+}
+
+/* headers */
+
+.main-heading {
+    font-family: var(--font4);
+    font-weight: 100;
+    font-style: oblique;
+}
+
+.secondary-heading {
+    font-family: var(--font4);
+}
+
+.banner-text {
+    font-family: var(--font4);
+}
+
+/* links */
+
+.link {
+    color: #59b0db;
+}
+
+/* ------------------------------- */
+/* header                          */
+/* ------------------------------- */
+
 .header {
     position: fixed;
     width: 100%;
@@ -47,19 +115,6 @@ body {
     left: 0;
 }
 
-.ad-wide-centre {
-    width: 728px;
-    margin: auto;
-    height: 90px;
-    background-color: #cbcbcb;
-    color: #ffffff;
-    text-align: center;
-    font-size: 50px;
-    font-family: sans-serif;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .sub-banner {
     display: flex;
     justify-content: center;
@@ -72,10 +127,6 @@ body {
 .sub-banner > h2 { 
     font-weight: 100;
     font-size: 20px;
-}
-
-.banner-link {
-    color: #59b0db;
 }
 
 .header-items{
@@ -95,6 +146,10 @@ body {
     cursor: pointer;
     color: #767676;
 }
+
+/* ------------------------------- */
+/* nav menu                        */
+/* ------------------------------- */
 
 .header-menu {
     width: 100%;
@@ -135,7 +190,11 @@ body {
     color: #767676;
 }
 
-.spotlight {
+/* ------------------------------- */
+/* hero section                    */
+/* ------------------------------- */
+
+.hero-section {
     width: 70%;
     margin: auto;
     display: flex;
@@ -143,25 +202,25 @@ body {
     margin-bottom: 30px;
 }
 
-.spotlight-centre {
+.hero-centre {
     width: 60%;
     margin: auto;
     padding: 0 30px;
 }
 
-.spotlight-left {
+.hero-left {
     width: 25%;
     padding: 0 30px;
     border-right: 1px solid #e5e5e5;
 }
 
-.spotlight-right {
+.hero-right {
     width: 25%;
     border-left: 1px solid #e5e5e5;
     padding: 0 30px;
 }
 
-.spotlight-item-reg {
+.hero-item-reg {
     overflow: hidden;
     line-height: 24px;
     border-bottom: 1px solid #e5e5e5;
@@ -172,7 +231,7 @@ body {
     border: 0;
 }
 
-.spotlight-item-reg > img {
+.hero-item-reg > img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -180,81 +239,68 @@ body {
 
 .item-section-text {
     
-    font-family: sans-serif;
-    color: #db3334;
-    font-size: 14px;
-    line-height: 1;
+    
 }
 
 .item-title-text {
-    font-family: poynter-oldstyle-text, serif;
-    font-weight: 500;
-    font-style: normal;
+    
 }
 
 .item-author-text {
     
-    font-family: sans-serif;
-    font-weight: 900;
+    
 }
 
 .item-description {
     
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: 300;
+    
 }
 
-.spotlight-item-large {
+.hero-item-large {
     margin-bottom: 30px;
     border-bottom: 1px solid #e5e5e5;
 }
 
-.spotlight-item-large > img {
+.hero-item-large > img {
     width: 100%;
     height: 500px;
     object-fit: cover;
 }
 
-.spotlight-item-wide {
+.hero-item-wide {
     position: relative;
     display: flex;
     margin-bottom: 60px;
     z-index: -100;
 }
 
-.spotlight-item-wide-content {
+.hero-item-wide-content {
     width: 60%;
 }
 
-.spotlight-item-wide > img {
+.hero-item-wide > img {
     width: 40%;
     object-fit: cover;
     height: 150px;
 }
 
 
-.spotlight-item-small {
+.hero-item-small {
     display: flex;
     border-top: 1px solid #e5e5e5;
     padding-top: 25px;
     margin-bottom: 10px;
 }
 
-.spotlight-item-small-content {
+.hero-item-small-content {
     width: 68%;
     padding-right: 10px;
 }
 
-.spotlight-item-small > img {
+.hero-item-small > img {
     width: 40%;
     height: 100px;
     object-fit: cover;
-}
-
-.heading {
-    font-weight: 100;
-    font-style: oblique;
 }
 
 .item-title-text-thin {
@@ -262,6 +308,10 @@ body {
 }
 
 
+
+/* ------------------------------- */
+/* spotlight section               */
+/* ------------------------------- */
 
 
 
@@ -329,37 +379,17 @@ body {
 
 .spot-secondary-item > img {
     object-fit: contain;
-    width: 20%;
+    width: 25%;
     margin: 0 0 20px 20px;
     float: right;
 }
 
 
-.ad-tall {
-    width: 100%;
-    padding-left: 50px;
-    margin-top; 20px;
-    position: sticky;
-    top: 18%;
-    z-index: -5;
-}
-
-
-.ad-image-tall {
-    height: 30%;
-}
-
 .BLOCK {
     height: 1000px;
 }
 
-.ad-wide-centre-big {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+
 
 .latest-header {
     text-align: center;
@@ -372,6 +402,45 @@ body {
 }
 
 
+/* ------------------------------- */
+/* ads                             */
+/* ------------------------------- */
+
+
+
+.ad-wide-centre {
+    width: 728px;
+    margin: auto;
+    height: 90px;
+    background-color: #cbcbcb;
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ad-tall {
+    width: 100%;
+    padding-left: 50px;
+    margin-top; 20px;
+    position: sticky;
+    top: 18%;
+    z-index: -5;
+}
+
+.ad-image-tall {
+    height: 30%;
+}
+
+.ad-wide-centre-big {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 
 
@@ -394,6 +463,10 @@ body {
 
 
 
+
+/* ------------------------------- */
+/* footer                          */
+/* ------------------------------- */
 
 
 footer {
