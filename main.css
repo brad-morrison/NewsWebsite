@@ -645,7 +645,7 @@ body {
 
 
 footer {
-    background-color: #1c1c1c;
+    background-color: #171717;
     width: 100%;
     margin-top: 40px;
 }
@@ -686,7 +686,6 @@ footer {
 
 .footer-links-container {
     margin-top: 40px;
-    
     column-count: 5;
     width: 100%;
 }
@@ -703,6 +702,7 @@ footer {
     break-inside: avoid;
     color: white;
     font-family: sans-serif;
+    margin-bottom: 30px;
 }
 
 .footer-link-item > h4 {
@@ -718,3 +718,109 @@ footer {
     font-weight: 700;
     line-height: 1.5;
 }
+
+.footer-link-item > ul > li {
+    margin-bottom: 5px;
+}
+
+.footer-link-item > ul > li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-right {
+    display: flex;
+    width: 18%;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.social-links {
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.social-links-icons {
+    margin-top: 40px;
+    padding-bottom: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid grey;;
+}
+
+.icon {
+    filter: invert(100%);
+    height: 32px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+.fb {
+    filter: brightness(100);
+}
+
+.copyright-name {
+    width: 100%;
+    display: flex;
+}
+
+.copyright-name > h4 {
+    font-family: atrament-web,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 0;
+    margin-bottom: 20px;
+}
+
+.copyright-name > .bradley {
+    color: #f7fd49;
+    font-weight: 600;
+    margin-right: 7px;
+}
+
+.copyright-name > .morrison {
+    font-weight: 600;
+    color: #848484;
+}
+
+.copyright > p {
+    color: #818181;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.sites-list-container {
+    width: 100%;
+    position: relative;
+}
+
+.sites-list {
+    -webkit-appearance: none;
+    background-color: #434343;
+    color: #969696;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 800;
+    border: 0;
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.arrow {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #969696;
+    bottom: 0;
+    height: 0;
+    margin: auto 0;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    width: 0;
+}
+
