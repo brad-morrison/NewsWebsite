@@ -668,6 +668,11 @@ footer {
     padding-bottom: 15px;
 }
 
+.footer-ribbon-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .footer-ribbon-item::after {
     content: "\B7";
     font-size: 28px;
