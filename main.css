@@ -33,6 +33,11 @@ body {
     font-style: normal;
 }
 
+.item-title-text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .hero-title {
     font-size: 2.05em;
     line-height: 1;
@@ -45,6 +50,11 @@ body {
     font-size: 14px;
     line-height: 0.5;
     margin-top: 20px;
+}
+
+.item-section-text:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .item-desc-text {
@@ -77,6 +87,11 @@ body {
 
 .link {
     color: #59b0db;
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 /* ------------------------------- */
@@ -247,6 +262,11 @@ body {
     object-fit: cover;
 }
 
+.hero-item-reg > img:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .hero-item-large {
     margin-bottom: 30px;
     border-bottom: 1px solid #e5e5e5;
@@ -258,8 +278,11 @@ body {
     object-fit: cover;
 }
 
+.hero-item-large > img:hover {
+    cursor: pointer;
+}
+
 .hero-item-wide {
-    position: relative;
     display: flex;
     margin-bottom: 60px;
     z-index: -100;
@@ -275,12 +298,20 @@ body {
     height: 150px;
 }
 
+.hero-item-wide > img:hover {
+    cursor: pointer;
+}
+
 
 .hero-item-small {
     display: flex;
     border-top: 1px solid #e5e5e5;
     padding-top: 25px;
     margin-bottom: 10px;
+}
+
+.hero-item-small > img{
+    cursor: pointer;
 }
 
 .hero-item-small-content {
@@ -296,6 +327,11 @@ body {
 
 .item-title-text-thin {
     font-weight: 100;
+}
+
+.item-title-text-thin:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 
@@ -668,17 +704,18 @@ footer {
     padding-bottom: 15px;
 }
 
-.footer-ribbon-item:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 .footer-ribbon-item::after {
     content: "\B7";
     font-size: 28px;
     padding-top: 6px;
     padding-left: 40px;
     padding-right: 40px;
+    text-decoration: none;
+}
+
+.footer-ribbon-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .footer-content {
